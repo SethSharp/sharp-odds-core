@@ -1,6 +1,6 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Betting\Models;
+namespace SethSharp\SharpOddsCore\Domain\Betting\Models;
 
 use Carbon\Carbon;
 use Domain\Code\Models\Sport;

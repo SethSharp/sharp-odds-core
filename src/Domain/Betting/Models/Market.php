@@ -1,6 +1,6 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Betting\Models;
+namespace SethSharp\SharpOddsCore\Domain\Betting\Models;
 
 use Domain\Code\Models\Sport;
 use Illuminate\Database\Eloquent\Model;

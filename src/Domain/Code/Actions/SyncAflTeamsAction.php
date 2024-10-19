@@ -1,12 +1,12 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Code\Actions;
+namespace SethSharp\SharpOddsCore\Domain\Code\Actions;
 
-use Domain\Code\Models\Competitor;
-use Domain\Code\Enums\AflTeamsEnum;
-use SethSharp\SharpOddsCore\Models\Code\Models\Sport;
-use SethSharp\SharpOddsCore\Models\Code\Enums\SportType;
-use SethSharp\SharpOddsCore\Models\Code\Enums\CompetitorType;
+use SethSharp\SharpOddsCore\Domain\Code\Models\Sport;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\SportType;
+use SethSharp\SharpOddsCore\Domain\Code\Models\Competitor;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\AflTeamsEnum;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\CompetitorType;
 
 class SyncAflTeamsAction
 {
