@@ -2,6 +2,7 @@
     "name": "sethsharp/sharp-odds-core",
     "description": "Shared functionality for Sharp Odds ecosystem",
     "type": "library",
+    "homepage": "https://github.com/SethSharp/sharp-odds-core",
     "autoload": {
         "psr-4": {
             "SethSharp\\SharpOddsCore\\": "src/"
