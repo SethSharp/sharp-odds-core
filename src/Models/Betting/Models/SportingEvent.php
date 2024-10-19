@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Betting\Models;
+namespace SethSharp\SharpOddsCore\Models\Betting\Models;
 
 use Carbon\Carbon;
 use Domain\Code\Models\Sport;
@@ -8,12 +8,12 @@ use Domain\Code\Models\Competitor;
 use Spatie\LaravelData\DataCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use Domain\Code\DataObjects\CompetitorData;
-use Domain\Betting\DataObjects\SportEventData;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use SethSharp\SharpOddsCore\Models\Code\DataObjects\CompetitorData;
+use SethSharp\SharpOddsCore\Models\Betting\DataObjects\SportEventData;
 
 class SportingEvent extends Model
 {

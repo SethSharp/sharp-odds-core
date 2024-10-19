@@ -1,7 +1,6 @@
 <?php
 
-namespace Domain\Betting\Enums;
-
+namespace SethSharp\SharpOddsCore\Models\Betting\Enums;
 enum AflMarketsEnum: string
 {
     case HEAD_TO_HEAD = 'head_to_head';

@@ -1,13 +1,13 @@
 <?php
 
-namespace Domain\Betting\Models;
+namespace SethSharp\SharpOddsCore\Models\Betting\Models;
 
 use Domain\Code\Models\Competitor;
 use Spatie\LaravelData\DataCollection;
 use Illuminate\Database\Eloquent\Model;
-use Domain\Betting\DataObjects\MarketData;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use SethSharp\SharpOddsCore\Models\Betting\DataObjects\MarketData;
 
 class Odd extends Model
 {

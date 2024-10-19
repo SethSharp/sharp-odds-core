@@ -1,14 +1,14 @@
 <?php
 
-namespace Domain\Betting\Models;
+namespace SethSharp\SharpOddsCore\Models\Betting\Models;
 
 use Spatie\LaravelData\DataCollection;
 use Illuminate\Database\Eloquent\Model;
-use Domain\Betting\Enums\BookmakersEnum;
-use Domain\Betting\DataObjects\MarketData;
-use Domain\Betting\DataObjects\BookmakerEventData;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use SethSharp\SharpOddsCore\Models\Betting\Enums\BookmakersEnum;
+use SethSharp\SharpOddsCore\Models\Betting\DataObjects\MarketData;
+use SethSharp\SharpOddsCore\Models\Betting\DataObjects\BookmakerEventData;
 
 class Bookmaker extends Model
 {

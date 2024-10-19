@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Betting\DataObjects;
+namespace SethSharp\SharpOddsCore\Models\Betting\DataObjects;
 
 use Spatie\LaravelData\Data;
 use Spatie\TypeScriptTransformer\Attributes\TypeScript;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Betting\Models;
+namespace SethSharp\SharpOddsCore\Models\Betting\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

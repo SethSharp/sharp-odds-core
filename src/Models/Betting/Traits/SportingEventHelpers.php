@@ -1,9 +1,8 @@
 <?php
 
-namespace Domain\Betting\Traits;
+namespace SethSharp\SharpOddsCore\Models\Betting\Traits;
 
 use Illuminate\Support\Str;
-use Domain\Code\Models\Competitor;
 
 trait SportingEventHelpers
 {

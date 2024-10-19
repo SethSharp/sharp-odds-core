@@ -1,7 +1,6 @@
 <?php
 
-namespace Domain\Betting\Enums;
-
+namespace SethSharp\SharpOddsCore\Models\Betting\Enums;
 enum BookmakersEnum: string
 {
     case SPORTS_BET = 'sports_bet';

@@ -3,7 +3,7 @@
 namespace SethSharp\SharpOddsCore\Models\Code\DataObjects;
 
 use Spatie\LaravelData\Data;
-use Domain\Code\Enums\SportType;
+use SethSharp\SharpOddsCore\Models\Code\Enums\SportType;
 use Spatie\TypeScriptTransformer\Attributes\TypeScript;
 
 #[TypeScript]
