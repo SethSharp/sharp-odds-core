@@ -1,0 +1,17 @@
+{
+    "name": "sethsharp/sharp-odds-core",
+    "description": "Shared functionality for Sharp Odds ecosystem",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SethSharp\\SharpOddsCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Seth Sharp",
+            "email": "sesharp@outlook.com"
+        }
+    ],
+    "require": {}
+}
