@@ -1,13 +1,13 @@
 <?php
 
-namespace Domain\Code\Models;
+namespace SethSharp\SharpOddsCore\Models\Code\Models;
 
-use Domain\Code\Enums\CompetitorType;
 use Illuminate\Database\Eloquent\Model;
-use Domain\Betting\Models\SportingEvent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use SethSharp\SharpOddsCore\Models\Code\Enums\CompetitorType;
+use SethSharp\SharpOddsCore\Models\Betting\Models\SportingEvent;
 
 class Competitor extends Model
 {

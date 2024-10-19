@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Code\Enums;
+namespace SethSharp\SharpOddsCore\Models\Code\Enums;
 
 enum NrlTeamsEnum: string
 {

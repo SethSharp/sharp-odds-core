@@ -1,14 +1,14 @@
 <?php
 
-namespace Domain\Code\Models;
+namespace SethSharp\SharpOddsCore\Models\Code\Models;
 
-use Domain\Code\Enums\SportType;
-use Domain\Betting\Models\Market;
-use Domain\Code\DataObjects\SportData;
 use Illuminate\Database\Eloquent\Model;
-use Domain\Betting\Models\SportingEvent;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use SethSharp\SharpOddsCore\Models\Code\Enums\SportType;
+use SethSharp\SharpOddsCore\Models\Betting\Models\Market;
+use SethSharp\SharpOddsCore\Models\Code\DataObjects\SportData;
+use SethSharp\SharpOddsCore\Models\Betting\Models\SportingEvent;
 
 class Sport extends Model
 {
