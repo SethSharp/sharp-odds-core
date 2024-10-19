@@ -1,6 +1,6 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Code\Enums;
+namespace SethSharp\SharpOddsCore\Domain\Code\Enums;
 
 use SethSharp\OddsApi\Enums\SportsEnum;
 

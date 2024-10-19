@@ -1,9 +1,9 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Code\Actions;
+namespace SethSharp\SharpOddsCore\Domain\Code\Actions;
 
-use SethSharp\SharpOddsCore\Models\Code\Models\Sport;
-use SethSharp\SharpOddsCore\Models\Code\Enums\SportType;
+use SethSharp\SharpOddsCore\Domain\Code\Models\Sport;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\SportType;
 
 class SyncSportsAction
 {

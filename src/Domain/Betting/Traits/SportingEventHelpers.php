@@ -1,6 +1,6 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Betting\Traits;
+namespace SethSharp\SharpOddsCore\Domain\Betting\Traits;
 
 use Illuminate\Support\Str;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Betting\Models;
+namespace SethSharp\SharpOddsCore\Domain\Betting\Models;
 
 use Spatie\LaravelData\DataCollection;
 use Illuminate\Database\Eloquent\Model;
