@@ -16,6 +16,18 @@
     ],
     "require": {
         "php": "^8.3",
-        "illuminate/support": "^11.0"
+        "sethsharp/odds-api": "^1.0",
+        "laravel/framework": "^11.9",
+        "spatie/enum": "^3.13",
+        "spatie/laravel-data": "^4.7",
+        "spatie/laravel-query-builder": "^6.0",
+        "spatie/laravel-typescript-transformer": "^2.4",
+        "spatie/typescript-transformer": "^2.3"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3"
+        },
+        "platform-check": false
     }
 }
