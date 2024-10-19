@@ -1,0 +1,27 @@
+<?php
+
+namespace Domain\Code\Actions;
+
+use Domain\Code\Models\Sport;
+use Domain\Code\Models\Competitor;
+use Domain\Code\Enums\NrlTeamsEnum;
+use Domain\Code\Enums\CompetitorType;
+use SethSharp\OddsApi\Enums\SportsEnum;
+
+class SyncNrlTeamsAction
+{
+    public function __invoke(): void
+    {
+        $nrl = Sport::query()->firstWhere('name', SportsEnum::RUGBYLEAGUE_NRL->value);
+
+        collect(NrlTeamsEnum::cases())
+            ->each(function (NrlTeamsEnum $team) use ($nrl) {
+                Competitor::firstOrCreate([
+                    'sport_id' => $nrl->id,
+                    'type' => CompetitorType::TEAM->value,
+                    'slug' => $team->value,
+                    'display_name' => $team->displayName(),
+                ]);
+            });
+    }
+}
