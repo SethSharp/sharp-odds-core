@@ -5,8 +5,8 @@ namespace SethSharp\SharpOddsCore\Domain\Betting\DataObjects;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 use Spatie\TypeScriptTransformer\Attributes\TypeScript;
-use SethSharp\SharpOddsCore\Models\Code\DataObjects\SportData;
-use SethSharp\SharpOddsCore\Models\Code\DataObjects\CompetitorData;
+use SethSharp\SharpOddsCore\Domain\Code\DataObjects\SportData;
+use SethSharp\SharpOddsCore\Domain\Code\DataObjects\CompetitorData;
 
 #[TypeScript]
 class SportEventData extends Data

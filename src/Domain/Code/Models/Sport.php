@@ -5,10 +5,11 @@ namespace SethSharp\SharpOddsCore\Domain\Code\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use SethSharp\SharpOddsCore\Models\Code\Enums\SportType;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\SportType;
 use SethSharp\SharpOddsCore\Domain\Betting\Models\Market;
-use SethSharp\SharpOddsCore\Models\Code\DataObjects\SportData;
+use SethSharp\SharpOddsCore\Domain\Code\DataObjects\SportData;
 use SethSharp\SharpOddsCore\Domain\Betting\Models\SportingEvent;
+use SethSharp\SharpOddsCore\Database\Factories\Code\SportFactory;
 
 class Sport extends Model
 {
@@ -19,6 +20,11 @@ class Sport extends Model
     protected $casts = [
         'name' => SportType::class
     ];
+
+    protected static function newFactory()
+    {
+        return new SportFactory();
+    }
 
     /**
      * @return HasMany<Competitor>

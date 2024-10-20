@@ -6,9 +6,10 @@ use Spatie\LaravelData\DataCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use SethSharp\SharpOddsCore\Models\Betting\Enums\BookmakersEnum;
-use SethSharp\SharpOddsCore\Models\Betting\DataObjects\MarketData;
-use SethSharp\SharpOddsCore\Models\Betting\DataObjects\BookmakerEventData;
+use SethSharp\SharpOddsCore\Domain\Betting\Enums\BookmakersEnum;
+use SethSharp\SharpOddsCore\Domain\Betting\DataObjects\MarketData;
+use SethSharp\SharpOddsCore\Database\Factories\Betting\BookmakerFactory;
+use SethSharp\SharpOddsCore\Domain\Betting\DataObjects\BookmakerEventData;
 
 class Bookmaker extends Model
 {
@@ -19,6 +20,11 @@ class Bookmaker extends Model
     protected $casts = [
         'name' => BookmakersEnum::class
     ];
+
+    protected static function newFactory()
+    {
+        return new BookmakerFactory();
+    }
 
     /**
      * @return HasMany<Odd>

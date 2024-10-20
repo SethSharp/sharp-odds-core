@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use SethSharp\SharpOddsCore\Models\Code\Enums\CompetitorType;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\CompetitorType;
 use SethSharp\SharpOddsCore\Domain\Betting\Models\SportingEvent;
+use SethSharp\SharpOddsCore\Database\Factories\Code\CompetitorFactory;
 
 class Competitor extends Model
 {
@@ -18,6 +19,11 @@ class Competitor extends Model
     protected $casts = [
         'type' => CompetitorType::class,
     ];
+
+    protected static function newFactory()
+    {
+        return new CompetitorFactory();
+    }
 
     /**
      * @return BelongsToMany<SportingEvent>

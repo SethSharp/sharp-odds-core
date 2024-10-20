@@ -2,18 +2,24 @@
 
 namespace SethSharp\SharpOddsCore\Domain\Betting\Models;
 
-use Domain\Code\Models\Sport;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use SethSharp\SharpOddsCore\Domain\Code\Models\Sport;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use SethSharp\SharpOddsCore\Database\Factories\Betting\MarketFactory;
 
 class Market extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
+
+    protected static function newFactory()
+    {
+        return new MarketFactory();
+    }
 
     /**
      * @return HasMany<Odd>

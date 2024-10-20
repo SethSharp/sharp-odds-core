@@ -3,17 +3,18 @@
 namespace SethSharp\SharpOddsCore\Domain\Betting\Models;
 
 use Carbon\Carbon;
-use Domain\Code\Models\Sport;
-use Domain\Code\Models\Competitor;
 use Spatie\LaravelData\DataCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use SethSharp\SharpOddsCore\Domain\Code\Models\Sport;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use SethSharp\SharpOddsCore\Models\Code\DataObjects\CompetitorData;
-use SethSharp\SharpOddsCore\Models\Betting\DataObjects\SportEventData;
+use SethSharp\SharpOddsCore\Domain\Code\Models\Competitor;
+use SethSharp\SharpOddsCore\Domain\Code\DataObjects\CompetitorData;
+use SethSharp\SharpOddsCore\Domain\Betting\DataObjects\SportEventData;
+use SethSharp\SharpOddsCore\Database\Factories\Betting\SportingEventFactory;
 
 class SportingEvent extends Model
 {
@@ -24,6 +25,10 @@ class SportingEvent extends Model
     protected $casts = [
         'commence_time' => 'datetime'
     ];
+    protected static function newFactory()
+    {
+        return new SportingEventFactory();
+    }
 
     /**
      * @return BelongsToMany<Competitor>

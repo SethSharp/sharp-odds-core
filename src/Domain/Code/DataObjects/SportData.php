@@ -1,9 +1,9 @@
 <?php
 
-namespace SethSharp\SharpOddsCore\Models\Code\DataObjects;
+namespace SethSharp\SharpOddsCore\Domain\Code\DataObjects;
 
 use Spatie\LaravelData\Data;
-use SethSharp\SharpOddsCore\Models\Code\Enums\SportType;
+use SethSharp\SharpOddsCore\Domain\Code\Enums\SportType;
 use Spatie\TypeScriptTransformer\Attributes\TypeScript;
 
 #[TypeScript]
