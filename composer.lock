@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f460fbef2a23dfa1b48c953a7c27b1fc",
+    "content-hash": "f5d6085496fd1c47f091989be1fb66df",
     "packages": [
         {
             "name": "amphp/amp",
@@ -4516,16 +4516,16 @@
         },
         {
             "name": "sethsharp/odds-api",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SethSharp/odds-api.git",
-                "reference": "ffb8203a1117e19239f0c7d506d0746a0f9ff16d"
+                "reference": "ef6ea863777c0cbdbc285760165f79a5a5e61f48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SethSharp/odds-api/zipball/ffb8203a1117e19239f0c7d506d0746a0f9ff16d",
-                "reference": "ffb8203a1117e19239f0c7d506d0746a0f9ff16d",
+                "url": "https://api.github.com/repos/SethSharp/odds-api/zipball/ef6ea863777c0cbdbc285760165f79a5a5e61f48",
+                "reference": "ef6ea863777c0cbdbc285760165f79a5a5e61f48",
                 "shasum": ""
             },
             "require": {
@@ -4566,9 +4566,9 @@
             "homepage": "https://github.com/SethSharp/odds-api",
             "support": {
                 "issues": "https://github.com/SethSharp/odds-api/issues",
-                "source": "https://github.com/SethSharp/odds-api/tree/v1.0.0"
+                "source": "https://github.com/SethSharp/odds-api/tree/v1.1.0"
             },
-            "time": "2024-10-05T01:44:31+00:00"
+            "time": "2024-10-21T20:07:57+00:00"
         },
         {
             "name": "spatie/enum",

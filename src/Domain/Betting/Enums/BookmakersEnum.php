@@ -1,11 +1,14 @@
 <?php
 
 namespace SethSharp\SharpOddsCore\Domain\Betting\Enums;
+
+use SethSharp\OddsApi\Enums\BookmakersEnum as OddsApiBookmakersEnum;
+
 enum BookmakersEnum: string
 {
-    case SPORTS_BET = 'sports_bet';
-    case POINTS_BET = 'points_bet';
-    case LAD_BROKES = 'lad_brokes';
+    case SPORTS_BET = OddsApiBookmakersEnum::SPORTSBET->value;
+    case POINTS_BET = OddsApiBookmakersEnum::POINTSBETAU->value;
+    case LAD_BROKES = OddsApiBookmakersEnum::LADBROKES_AU->value;
 
     public function displayName(): string
     {
